@@ -1,0 +1,134 @@
+style.css
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#d1fae5,#10b981);
+    color:#333;
+}
+
+header{
+    background:#065f46;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:2.8rem;
+    margin-bottom:10px;
+}
+
+#typing{
+    height:35px;
+    color:#a7f3d0;
+}
+
+.container{
+    max-width:1100px;
+    margin:30px auto;
+    display:flex;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+aside{
+    width:30%;
+    background:#ecfdf5;
+    padding:25px;
+}
+
+main{
+    width:70%;
+    padding:25px;
+}
+
+section{
+    margin-bottom:25px;
+}
+
+h2{
+    color:#065f46;
+    margin-bottom:10px;
+}
+
+p{
+    line-height:1.6;
+}
+
+ul{
+    padding-left:20px;
+}
+
+article{
+    background:#f0fdf4;
+    padding:15px;
+    border-left:5px solid #10b981;
+    border-radius:8px;
+    margin-bottom:15px;
+    transition:0.3s;
+}
+
+article:hover{
+    transform:translateX(5px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Scroll Animation */
+
+.hidden{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Top Button */
+
+#topBtn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    border:none;
+    background:#10b981;
+    color:white;
+    font-size:20px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    cursor:pointer;
+    display:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+#topBtn:hover{
+    background:#065f46;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    aside,
+    main{
+        width:100%;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
+}
